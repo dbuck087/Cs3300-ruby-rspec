@@ -9,7 +9,7 @@ end
 def max_2_sum(array)
   array.sort!
 
-  if array.isempty?
+  if array.empty?
     return 0
 
 end
