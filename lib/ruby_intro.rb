@@ -10,8 +10,14 @@ def max_2_sum(array)
   array.sort!
 
   if array.empty?
-    return 0
+    sum = 0
+  elsif array[-2] == nil
+    sum = array[-1]
+  else
+    sum = array[-1] + array[-2]
   end
+
+  return sum
 end
 
 def sum_to_n? arr, n
