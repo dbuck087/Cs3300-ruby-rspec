@@ -8,7 +8,9 @@ end
 
 def max_2_sum(array)
   array.sort!
-  return array[-1] + array[-2]
+  sum = 0
+  sum = array[-1] + array[-2]
+  return sum
 end
 
 def sum_to_n? arr, n
