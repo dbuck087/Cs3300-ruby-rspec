@@ -7,10 +7,10 @@ def sum(array)
 end
 
 def max_2_sum(array)
-  array.sort!
+  array.sort!()
   sum = 0
 
-  if array.empty?
+  if array.empty?()
     sum = 0
   elsif array[-1] != nil && array[-2] == nil
     sum = array[-1]
