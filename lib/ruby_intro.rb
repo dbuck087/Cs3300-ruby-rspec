@@ -27,10 +27,13 @@ end
 
 def sum_to_n? (array, num)
   bool = false
-  array.each do |i|
-    array.each do |j|
-      if (array[i] + array[j]) == num
-        bool = true
+
+  if !array.empty and array[-2] != nil
+    array.each do |i|
+      array.each do |j|
+        if (array[i] + array[j]) == num
+          bool = true
+        end
       end
     end
   end
