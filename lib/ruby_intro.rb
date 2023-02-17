@@ -32,7 +32,7 @@ def sum_to_n? (array, num)
   #  bool = true
  # end
 
-  return false
+  return bool
 end
 
 # Part 2
