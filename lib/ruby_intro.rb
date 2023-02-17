@@ -28,11 +28,11 @@ end
 def sum_to_n? (array, num)
   bool = false
 
-  if (array.empty != true)
-    bool = true
-  end
+  #if (array.empty != true)
+  #  bool = true
+ # end
 
-  return bool
+  return false
 end
 
 # Part 2
