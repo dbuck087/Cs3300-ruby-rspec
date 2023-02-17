@@ -6,8 +6,9 @@ def sum(array)
   return array.sum()
 end
 
-def max_2_sum arr
-  # YOUR CODE HERE
+def max_2_sum(array)
+  array.sort!
+  return array[-1] + array[-2]
 end
 
 def sum_to_n? arr, n
