@@ -2,8 +2,7 @@
 
 # Part 1
 
-def sum_array(array)
-  puts "test"
+def sum(array)
   return array.sum()
 end
 
