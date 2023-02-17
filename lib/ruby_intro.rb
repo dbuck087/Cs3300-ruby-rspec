@@ -11,7 +11,7 @@ def max_2_sum(array)
 
   if array.empty?
     return 0
-
+  end
 end
 
 def sum_to_n? arr, n
