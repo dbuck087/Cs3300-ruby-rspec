@@ -7,16 +7,8 @@ def sum(array)
 end
 
 def max_2_sum(array)
-  array = array.sort()
-  sum = 0
+  
 
-  if array.empty?()
-    sum = 0
-  elsif array[-1] != nil && array[-2] == nil
-    sum = array[-1]
-  else
-    sum = array[-1] + array[-2]
-  return sum
 end
 
 def sum_to_n? arr, n
