@@ -9,7 +9,13 @@ end
 def max_2_sum(array)
   array.sort!
   sum = 0
-  sum = array[-1] + array[-2]
+
+  if array.empty?
+    sum = 0
+  elsif array[-1] != nil && array[-2] == nil
+    sum = array[-1]
+  else
+    sum = array[-1] + array[-2]
   return sum
 end
 
