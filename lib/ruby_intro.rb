@@ -2,8 +2,9 @@
 
 # Part 1
 
-def sum arr
-  # YOUR CODE HERE
+def sum_array(array)
+  puts "test"
+  return array.sum()
 end
 
 def max_2_sum arr
