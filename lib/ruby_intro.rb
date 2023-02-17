@@ -28,7 +28,7 @@ end
 def sum_to_n? (array, num)
   bool = false
 
-  if (array.empty == false)
+  if (array.empty? == false)
     bool = true
   end
 
