@@ -37,6 +37,8 @@ def sum_to_n? (array, num)
       end
     end
   end
+
+  return bool
 end
 
 # Part 2
