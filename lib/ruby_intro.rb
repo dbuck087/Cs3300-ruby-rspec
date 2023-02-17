@@ -7,7 +7,7 @@ def sum(array)
 end
 
 def max_2_sum(array)
-  array.sort!()
+  array = array.sort()
   sum = 0
 
   if array.empty?()
