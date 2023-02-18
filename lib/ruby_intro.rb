@@ -28,12 +28,10 @@ end
 def sum_to_n? (array, num)
   return false if array.empty? or array[-2] == nil
     
-  array.each do |index1|
-
-    array.each do |index2|
-
-      return true if (array[index1] + array[index2]) == num
-    
+  for i in array
+    for j in array
+      if array[i] + array[j] == num
+        return true
     end
   end
 end
