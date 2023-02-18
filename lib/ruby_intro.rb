@@ -26,24 +26,16 @@ def max_2_sum(array)
 end
 
 def sum_to_n? (array, num)
-  bool = false
-
-  if (array.empty? == false and array[-2] != nil)
+  return false if (array.empty? == false and array[-2] != nil)
     
-    array.each do |element1|
-      array.each do |element2|
-        if (element1 + element2) == num
-          bool = true
-        end
-      end
+  array.each do |index1|
+
+    array.each do |index2|
+    
+      return true if (array[index1] + array[index2]) == num
+    
     end
-
-
-
-    bool = true
   end
-
-  return bool
 end
 
 # Part 2
