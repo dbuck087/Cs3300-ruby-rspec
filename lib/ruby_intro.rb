@@ -32,6 +32,7 @@ def sum_to_n? (array, num)
     for j in array
       if array[i] + array[j] == num
         return true
+      end
     end
   end
 end
