@@ -26,15 +26,25 @@ def max_2_sum(array)
 end
 
 def sum_to_n? (array, num)
+
   return false if array.empty? or array[-2] == nil
     
   for i in array
+
     for j in array
-      if array[i] + array[j] == num
+
+      sum = array[i] + array[j]
+
+      if sum == num
+
         return true
+
       end
+
     end
+
   end
+
 end
 
 # Part 2
