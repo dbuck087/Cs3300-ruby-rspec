@@ -26,7 +26,7 @@ def max_2_sum(array)
 end
 
 def sum_to_n? (array, num)
-  return false if array.empty? == false and array[-2] != nil
+  return false if array.empty? == false or array[-2] != nil
     
   array.each do |index1|
 
