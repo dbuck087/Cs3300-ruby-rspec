@@ -30,9 +30,9 @@ def sum_to_n? (array, num)
 
   if (array.empty? == false and array[-2] != nil)
     
-    array.each do |i|
-      array.each do |j|
-        if (array[i] + array[j]) == num
+    array.each do |element1|
+      array.each do |element2|
+        if (element1 + element2) == num
           bool = true
         end
       end
