@@ -18,7 +18,7 @@ def max_2_sum(array)
   elsif array[-2] == nil
     sum = array[-1]
   #if neither of the previous are true than add the last two elements in the array and return the value
-  else
+  elsif array.permutation(2).any? {|a,b| a+b==n}
     sum = array[-1] + array[-2]
   end
 
