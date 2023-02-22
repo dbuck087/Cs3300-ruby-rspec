@@ -27,9 +27,9 @@ end
 
 def sum_to_n? (array, num)
 
-  # return false if array.empty? || array[-2] == nil
+  return false if array.empty? || array[-2] == nil
 
-  array.empty? || array.permutation(2).any? {|a,b| a+b==num}
+  return true if array.permutation(2).any? {|a,b| a+b==num}
     
 end
 
