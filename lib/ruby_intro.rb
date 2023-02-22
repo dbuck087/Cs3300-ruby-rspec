@@ -44,10 +44,12 @@ def hello(name)
 end
 
 def starts_with_consonant? s
+  bool = false
   if /[^aeiou]/i.match(s[0]) != nil && s.empty? == false
-    return true
+    bool = true
+    return bool
   else
-    return false
+    return bool
   end
 end
 
