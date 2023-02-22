@@ -39,7 +39,8 @@ end
 # Part 2
 
 def hello(name)
-  # YOUR CODE HERE
+  base = "Hello, "
+  return base+name
 end
 
 def starts_with_consonant? s
