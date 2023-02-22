@@ -45,7 +45,7 @@ end
 
 def starts_with_consonant? s
   bool = false
-  if /[^aeiou]/i.match(s[0]) != nil && s.empty? == false
+  if /[b-df-hj-np-tv-z]/i.match(s[0]) != nil
     bool = true
     return bool
   else
