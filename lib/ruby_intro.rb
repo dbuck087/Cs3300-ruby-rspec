@@ -27,7 +27,7 @@ end
 
 def sum_to_n? (array, num)
 
-  return false if array.empty? or array[-2] == nil
+  return false if (array.empty? || array[-2] == nil)
     
   for i in array
 
