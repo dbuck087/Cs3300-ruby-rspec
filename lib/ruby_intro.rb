@@ -25,22 +25,23 @@ def max_2_sum(array)
   return sum
 end
 
+#method to check if any two members of an array sum to equal another number
 def sum_to_n? (array, num)
-
-  if (array.empty? || array.length() >= 2)
+  #check if array is empty or has a length 
+  if (array.empty? || array.length() < 2)
     return false
 
+  #check if any 2 permutations exists such that a+b == num
   elsif array.permutation(2).any? {|a,b| a+b==num}
     return true
-    
   end
 end
 
 # Part 2
 
+#method that adds the string "Hello, " before 
 def hello(name)
-  base = "Hello, "
-  return base+name
+  return "Hello, "+name
 end
 
 def starts_with_consonant? s
