@@ -27,15 +27,12 @@ end
 
 #method to check if any two members of an array sum to equal another number
 def sum_to_n? (array, num)
-  #check if array is empty or has a length 
-  if array.permutation(2).any? {|a,b| a+b==num}
-  
-    return true
   #check if any 2 permutations exists such that a+b == num
-else #if (array.empty? || array.length() < 2)
+  if array.permutation(2).any? {|a,b| a+b==num}
+    return true
+else
     return false
   end
-  
 end
 
 # Part 2
@@ -45,13 +42,14 @@ def hello(name)
   return "Hello, "+name
 end
 
+#method that checks the first letter and uses a regex to check if it is a vowel or not.
 def starts_with_consonant? s
-  bool = false
+  #bool = false
   if /[b-df-hj-np-tv-z]/i.match(s[0]) != nil
-    bool = true
-    return bool
+    #bool = true
+    return true
   else
-    return bool
+    return false
   end
 end
 
