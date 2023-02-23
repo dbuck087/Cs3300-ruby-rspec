@@ -28,13 +28,14 @@ end
 #method to check if any two members of an array sum to equal another number
 def sum_to_n? (array, num)
   #check if array is empty or has a length 
-  if (array.empty? || array.length() < 2)
-    return false
-
-  #check if any 2 permutations exists such that a+b == num
-  elsif array.permutation(2).any? {|a,b| a+b==num}
+  if array.permutation(2).any? {|a,b| a+b==num}
+  
     return true
+  #check if any 2 permutations exists such that a+b == num
+else #if (array.empty? || array.length() < 2)
+    return false
   end
+  
 end
 
 # Part 2
