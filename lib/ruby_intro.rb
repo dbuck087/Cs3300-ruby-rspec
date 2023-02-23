@@ -44,22 +44,25 @@ end
 
 #method that checks the first letter and uses a regex to check if it is a vowel or not.
 def starts_with_consonant? s
-  #bool = false
+  #use regex of consonants to check for match
   if /[b-df-hj-np-tv-z]/i.match(s[0]) != nil
-    #bool = true
     return true
+  #return false if no match is found
   else
     return false
   end
 end
 
+# Ran out of time and needed to focus on other work
 def binary_multiple_of_4? s
   # YOUR CODE HERE
 end
 
 # Part 3
 
+#requested class
 class BookInStock
+  #constructor
   def initialize(isbn, price)
     raise ArgumentError.new("ISBN cannot be empty.") unless isbn.empty? == false
     raise ArgumentError.new("Price must be greater than 0.") unless price > 0
@@ -67,9 +70,11 @@ class BookInStock
     @price = price
   end
 
+  #getters and setters
   attr_accessor :isbn
   attr_accessor :price
 
+  #method declaration that formats the books price
   def price_as_string
     string = "$%.2f" % price.to_s
   end
