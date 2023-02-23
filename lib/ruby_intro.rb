@@ -71,7 +71,7 @@ class BookInStock
   attr_accessor :price
 
   def price_as_string
-    string = "$" + price.round(2).to_s
+    string = "$%.2f" % price.to_s
   end
-  
+
 end
