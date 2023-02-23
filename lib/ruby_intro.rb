@@ -62,7 +62,7 @@ end
 class BookInStock
   def initialize(isbn, price)
     raise ArgumentError.new("ISBN cannot be empty.") unless isbn.empty? == false
-    raise ArgumentError.new("Price must be greater than 0.") unless price >= 0
+    raise ArgumentError.new("Price must be greater than 0.") unless price > 0
     @isbn = isbn
     @price = price
   end
@@ -70,5 +70,8 @@ class BookInStock
   attr_accessor :isbn
   attr_accessor :price
 
-
+  def price_as_string
+    string = "$" + price.round(2).to_s
+  end
+  
 end
